@@ -1,0 +1,2 @@
+- Grabbed yarn and inited stuff
+- Used `npx create-next-app@latest boilerplate --use-npm` to cheat on all the setup

@@ -1,0 +1,45 @@
+{
+  "React Function Component": {
+    "scope": "typescriptreact",
+    "prefix": ["rfc"],
+    "body": [
+      "import React from \"react\";",
+      "",
+      "interface ${1:MyComponent}Props {};",
+      "",
+      "const ${1}:React.FC<${1}Props> = (props) => {",
+      "  return null;",
+      "};",
+      "",
+      "export { ${1} }"
+    ],
+    "description": "A React function component with props"
+  },
+  "React Storybook Template": {
+    "scope": "typescriptreact",
+    "prefix": ["story"],
+    "body": [
+      "import { Story } from \"@storybook/react\";",
+      "import { withDesign } from \"storybook-addon-designs\";",
+      "import React from \"react\";",
+      "import { ${1:MyComponent}, ${1}Props } from \".\";",
+      "",
+      "export default {",
+      "  title: \"${1}\",",
+      "  component: ${1},",
+      "  decorators: [withDesign],",
+      "  parameters: {",
+      "    design: {",
+      "      type: \"figma\",",
+      "      url: \"\",",
+      "    },",
+      "  },",
+      "};",
+      "",
+      "export const Template: Story<${1}Props> = (args) => (",
+      "  <${1} {...args} />",
+      ");"
+    ],
+    "description": "A React Storybook CSF story with args"
+  }
+}
